@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="WirepasMicroservice_Sample.Views.MicroWirepasBaseManager"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WirepasMicroservice_Sample.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="stackedOptions" Grid.Column="0">
+            <Button x:Name="btnConnect" Content="Connect (grpc)" Margin="5" Padding="5" Click="btnConnect_Click"/>
+            <Rectangle Fill="Black" Height="1" Margin="5"/>
+            <Button x:Name="btnConnectAuthen" Content="Connect (Authentication)" Margin="5" Padding="5" Click="btnConnectAuthen_Click"/>
+            <Button x:Name="btnDisconnectAuthent" Content="Disconnect (Authentication)" Margin="5" Padding="5" Click="btnDisconnectAuthent_Click"/>
+            <Rectangle Fill="Black" Height="1" Margin="5"/>
+            <Button x:Name="btnStartWirepasFlow" Content="Start Wirepas Flow" Margin="5" Padding="5" Click="btnStartWirepasFlow_Click"/>
+            <Button x:Name="btnStopWirepasFlow" Content="Stop Wirepas Flow" Margin="5" Padding="5" Click="btnStopWirepasFlow_Click"/>
+            <Button x:Name="btnSendWirepasCommand" Content="Send Wirepas Command" Margin="5" Padding="5" Click="btnSendWirepasCommand_Click"/>
+            <Rectangle Fill="Black" Height="1" Margin="5"/>
+            <Button x:Name="btnGetStatus" Content="Get Status" Margin="5" Padding="5" Click="btnGetStatus_Click"/>
+            <Rectangle Fill="Black" Height="1" Margin="5"/>
+            <Button x:Name="btnStartListening" Content="Start listening" Margin="5" Padding="5" Click="btnStartListening_Click"/>
+            <DockPanel>
+                <TextBox x:Name="tbPacketCount" DockPanel.Dock="Right" Margin="5" Padding="5" Width="40"/>
+                <Button x:Name="btnGetPackets" Content="Get packets" Margin="5" Padding="5" Click="btnGetPackets_Click"/>
+            </DockPanel>
+            <Button x:Name="btnStopListening" Content="Stop listening" Margin="5" Padding="5" Click="btnStopListening_Click"/>
+        </StackPanel>
+        <!-- left panel -->
+        <StackPanel x:Name="stackedIput" Grid.Column="1">
+            <TextBlock x:Name="tbDisplayUserName" Text="User Credentials (login and password)" Margin="5" Padding="5" HorizontalAlignment="Right" />
+            <TextBox x:Name="tbUserName" Margin="5" Padding="5"/>
+            <PasswordBox x:Name="pwdUser" Margin="5" Padding="5" />
+            <!-- connection -->
+            <Rectangle x:Name="rectSep03" Fill="Black" Height="1" Margin="5"/>
+            <TextBlock x:Name="tbConnectionOptions" Text="Connections options" HorizontalAlignment="Right" Margin="5" Padding="5"/>
+            <TextBlock x:Name="tbBrokerHostname" Text="Broker Wirepas Hostname" FontSize="10" Margin="5,0,5,0"/>
+            <TextBox x:Name="tbBrokerHostnameValue" Text="192.168.0.193" Margin="5" Padding="5"/>
+            <TextBlock x:Name="tbBrokerWirepasPort" Text="Broker Wirepas Port" FontSize="10" Margin="5,0,5,0"/>
+            <TextBox x:Name="tbBrokerWirepasPortValue" Text="1883" Margin="5" Padding="5"/>
+            <!-- tag commands -->
+            <Rectangle x:Name="rectSep04" Fill="Black" Height="1" Margin="5"/>
+            <TextBlock x:Name="tbTagCommandsOptions" Text="Tag Commands" HorizontalAlignment="Right" Margin="5" Padding="5"/>
+            <TextBlock x:Name="tbTagAddressDecimal" Text="Tag Address (decimal)" FontSize="10" Margin="5,0,5,0"/>
+            <TextBox x:Name="tbTagAddressDecimalValue" Text="8482095" Margin="5" Padding="5"/>
+            <TextBlock x:Name="tbTagNetworkDecimal" Text="Network Id" FontSize="10" Margin="5,0,5,0"/>
+            <TextBox x:Name="tbTagNetworkIdDecimalValue" Text="2494496" Margin="5" Padding="5"/>
+            <TextBlock x:Name="tbTagSourceEndpoint" Text="Source Endpoint" FontSize="10" Margin="5,0,5,0"/>
+            <TextBox x:Name="tbTagSourceEndpointValue" Text="" Margin="5" Padding="5"/>
+            <TextBlock x:Name="tbTagDestinationEndpoint" Text="Destination Endpoint" FontSize="10" Margin="5,0,5,0"/>
+            <TextBox x:Name="tbTagDestinationEndpointValue" Text="" Margin="5" Padding="5"/>
+            <TextBlock x:Name="tbCommand" Text="Command" FontSize="10" Margin="5,0,5,0"/>
+            <TextBox x:Name="tbCommandValue" Text="" Margin="5" Padding="5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

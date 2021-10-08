@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>WirepasMicroservice_Sample</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>64x64_round_picto_ela.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="elaMicroserviceClient" Version="1.4.0" />
+    <PackageReference Include="ElaSoftwareCommon" Version="1.3.8" />
+  </ItemGroup>
+
+</Project>
