@@ -1,0 +1,3 @@
+[submodule "C#/WirepasMicroservice-Sample-Grpc/_ext_elaMicroserviceGrpc"]
+	path = "C#/WirepasMicroservice-Sample-Grpc/_ext_elaMicroserviceGrpc"
+	url = https://github.com/elaInnovation/elaMicroserviceGrpc.git

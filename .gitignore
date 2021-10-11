@@ -1,3 +1,6 @@
 /C#/WirepasMicroservice-Sample-Nuget/.vs
 /C#/WirepasMicroservice-Sample-Nuget/bin
 /C#/WirepasMicroservice-Sample-Nuget/obj
+/C#/WirepasMicroservice-Sample-Grpc/.vs
+/C#/WirepasMicroservice-Sample-Grpc/bin
+/C#/WirepasMicroservice-Sample-Grpc/obj
