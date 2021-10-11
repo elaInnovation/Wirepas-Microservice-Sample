@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>WirepasMicroservice_Sample</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>64x64_round_picto_ela.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_ext_elaMicroserviceGrpc\**" />
+    <EmbeddedResource Remove="_ext_elaMicroserviceGrpc\**" />
+    <None Remove="_ext_elaMicroserviceGrpc\**" />
+    <Page Remove="_ext_elaMicroserviceGrpc\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ElaSoftwareCommon" Version="1.3.8" />
+    <PackageReference Include="Google.Protobuf" Version="3.10.0" />
+    <PackageReference Include="Grpc.Core" Version="2.26.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="_ext_elaMicroserviceGrpc\elaMicroservicesGrpc.csproj" />
+  </ItemGroup>
+
+</Project>

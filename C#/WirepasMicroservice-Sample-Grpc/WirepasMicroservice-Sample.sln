@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WirepasMicroservice-Sample", "WirepasMicroservice-Sample.csproj", "{CE50383D-93BB-4A44-B5D5-E13ABFB7DF42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "elaMicroservicesGrpc", "_ext_elaMicroserviceGrpc\elaMicroservicesGrpc.csproj", "{EA807B08-4B88-4188-9F0C-6FFA6719710E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE50383D-93BB-4A44-B5D5-E13ABFB7DF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE50383D-93BB-4A44-B5D5-E13ABFB7DF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE50383D-93BB-4A44-B5D5-E13ABFB7DF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE50383D-93BB-4A44-B5D5-E13ABFB7DF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA807B08-4B88-4188-9F0C-6FFA6719710E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA807B08-4B88-4188-9F0C-6FFA6719710E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA807B08-4B88-4188-9F0C-6FFA6719710E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA807B08-4B88-4188-9F0C-6FFA6719710E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AF68D76-6142-4859-A27D-3B53F51B98C5}
+	EndGlobalSection
+EndGlobal
